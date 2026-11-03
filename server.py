@@ -102,8 +102,10 @@ def serve_dashboard():
                                     <span class="font-semibold text-gray-200">${span.name}</span>
                                     <span class="text-xs px-2 py-0.5 rounded ${badgeBg}">${span.span_type}</span>
                                 </div>
+                                
                                 <div class="text-xs font-mono text-gray-400 flex gap-4">
                                     <span>⏱️ ${span.duration_ms} ms</span>
+                                    <span class="text-emerald-400">💰 $${span.cost_usd.toFixed(5)}</span>
                                     <span class="uppercase font-bold">${span.status}</span>
                                 </div>
                             </div>
